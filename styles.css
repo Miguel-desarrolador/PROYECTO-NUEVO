@@ -11,18 +11,17 @@ body {
   background: #f8f9fa;
   color: #333;
 }
-
-/* HEADER */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #0f0f0f;
+  background: rgba(15, 15, 15, 0.8); /* color negro con 80% de opacidad */
   padding: 15px 20px;
   position: sticky;
   top: 0;
   z-index: 1000;
 }
+
 
 .logo {
   font-size: 1.2rem; /* tamaño del logo */
