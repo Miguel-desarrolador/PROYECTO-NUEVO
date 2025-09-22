@@ -61,14 +61,14 @@
 
 
     <!-- Cliente 1 -->
-<div data-aos="flip-left" class="card">
-  <img src="img/gorras.gif" alt="Mayorista sin Límites">
+<div  class="card">
+  <img data-aos="flip-left" src="img/gorras.gif" alt="Mayorista sin Límites">
 
   <h3>Mayorista Sin Límites</h3>
 
   <!-- Descripción y dirección -->
-  <p><strong>Descripción:</strong> Distribuidora mayorista de gorras a todo el país.</p>
-  <p><strong>Dirección:</strong> San Pedro, Provincia de Buenos Aires, Argentina</p>
+  <p><strong>Descripción:</strong> Distribuidora mayorista de gorras, envios todo el país.</p>
+  <p><strong>Dirección:</strong> San Pedro, Provincia de Buenos Aires, Argentina.</p>
 
   <!-- Horarios -->
   <p><strong>Horario de atención:</strong></p>
@@ -91,17 +91,72 @@
 </div>
 
 
-    <!-- Cliente 2 -->
-    <div data-aos="flip-right" class="card">
-      <img src="img/tecnologia.jpg" alt="Tienda de Tecnología">
-      <h3>Tienda de Tecnología</h3>
-      <a href="https://shopventa.vercel.app/" target="_blank" class="btn">
-        Visitar
-      </a>
-    </div>
+
+<!-- Cliente 2 -->
+<div  class="card">
+  <img data-aos="flip-right" src="img/tecnologia.jpg" alt="D y M Technology">
+
+  <h3>D y M Technology</h3>
+
+  <!-- Descripción y dirección -->
+  <p><strong>Descripción:</strong> Tienda que vende todo tipo de productos tecnológicos: celulares, auriculares, tablets y más.</p>
+  <p><strong>Dirección:</strong>  Rosario, Argentina</p>
+
+  <!-- Horarios 24/7 -->
+  <p><strong>Horario de atención:</strong> 24/7</p>
+
+  <!-- Botones -->
+  <div class="card-buttons">
+    <a href="https://shopventa.vercel.app/" target="_blank" class="btn">
+      <i class="fa fa-eye"></i> Visitar
+    </a>
+    <a href="https://wa.me/3416996971?text=👋%20Holaa!%20He%20visto%20tu%20tienda%20D%20y%20M%20Technology%20en%20TODO%20ROSARIO%20y%20me%20gustaría%20comprar%20tus%20productos%20🛒" 
+       target="_blank" class="btn-whatsapp">
+      <i class="fab fa-whatsapp"></i> Contactar por WhatsApp
+    </a>
+  </div>
+</div>
 
   </div>
 </section>
+
+
+<!-- Sección Únete -->
+<section class="unete" id="unete">
+  <div class="container">
+    <h2 data-aos="fade-up">¡Únete a TODOROSARIO!</h2>
+    <p data-aos="fade-up">Subí tu página web y conecta con miles de clientes en todo Rosario.</p>
+    
+    <button class="btn-unete" id="open-modal">Quiero vender / Ser parte</button>
+  </div>
+</section>
+
+<!-- Modal Mejorado -->
+<div id="modal-unete" class="modal">
+  <div class="modal-content" data-aos="zoom-in">
+    <span class="close-modal" id="close-modal">&times;</span>
+    <h3>Únete a TODOROSARIO</h3>
+    <p>Completa tus datos y envíalos por WhatsApp:</p>
+
+    <form id="form-unete">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+      <label for="rubro">Rubro:</label>
+      <input type="text" id="rubro" name="rubro" placeholder="Ej: Tienda de Gorras" required>
+
+      <label for="edad">Edad:</label>
+      <input type="number" id="edad" name="edad" placeholder="Tu edad" required>
+
+      <label for="descripcion">Descripción:</label>
+      <textarea id="descripcion" name="descripcion" rows="3" placeholder="Descripción de tu negocio" required></textarea>
+
+      <a id="enviar-whatsapp" href="#" target="_blank" class="btn-whatsapp">
+        <i class="fab fa-whatsapp"></i> Enviar por WhatsApp
+      </a>
+    </form>
+  </div>
+</div>
 
   <!-- FOOTER -->
   <footer id="contacto">

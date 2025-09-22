@@ -33,3 +33,37 @@ buscarInput.addEventListener("input", function() {
     }
   }
 });
+
+
+const openModal = document.getElementById('open-modal');
+const closeModal = document.getElementById('close-modal');
+const modal = document.getElementById('modal-unete');
+const enviarBtn = document.getElementById('enviar-whatsapp');
+const form = document.getElementById('form-unete');
+
+openModal.addEventListener('click', () => {
+  modal.style.display = 'block';
+});
+
+closeModal.addEventListener('click', () => {
+  modal.style.display = 'none';
+});
+
+window.addEventListener('click', (e) => {
+  if (e.target == modal) modal.style.display = 'none';
+});
+
+// Generar link de WhatsApp con datos del formulario
+enviarBtn.addEventListener('click', () => {
+  const nombre = document.getElementById('nombre').value.trim();
+  const rubro = document.getElementById('rubro').value.trim();
+  const edad = document.getElementById('edad').value.trim();
+  const descripcion = document.getElementById('descripcion').value.trim();
+
+  if(nombre && rubro && edad && descripcion){
+    const mensaje = `👋 Holaa! Quiero unirme a TODOROSARIO y estos son mis datos:%0ANombre: ${nombre}%0ARubro: ${rubro}%0AEdad: ${edad}%0ADescripción: ${descripcion}`;
+    enviarBtn.href = `https://wa.me/54934130047240?text=${mensaje}`;
+  } else {
+    alert('Por favor completa todos los campos antes de enviar.');
+  }
+});
