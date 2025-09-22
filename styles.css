@@ -97,7 +97,7 @@ header .logo {
   max-width: 100%;
   width: auto;
   height: auto;
-  object-fit: contain;
+  object-fit: cover;
   pointer-events: none;
   position: absolute;
   top: 50%;
