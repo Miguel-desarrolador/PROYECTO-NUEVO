@@ -26,5 +26,6 @@ const servicios = [
     url: "#",
     whatsapp: "https://wa.me/5493412345678"
   },
+  
   // ...agregá más servicios
 ];

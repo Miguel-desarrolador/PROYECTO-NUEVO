@@ -7,7 +7,7 @@ const pageNumbersServicios = document.getElementById("page-numbers-servicios");
 const prevBtnServicios = document.getElementById("prev-btn-servicios");
 const nextBtnServicios = document.getElementById("next-btn-servicios");
 
-const itemsPerPageServicios = 5;
+const itemsPerPageServicios = 8;
 let currentPageServicios = 1;
 let filteredServicios = servicios;
 

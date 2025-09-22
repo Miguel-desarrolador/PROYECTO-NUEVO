@@ -52,7 +52,7 @@ const pageNumbers = document.getElementById("page-numbers");
 const prevBtn = document.getElementById("prev-btn");
 const nextBtn = document.getElementById("next-btn");
 
-const itemsPerPage = 5;
+const itemsPerPage = 8;
 let currentPage = 1;
 let filteredProductos = productos;
 
