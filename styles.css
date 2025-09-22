@@ -88,7 +88,6 @@ header .logo {
   justify-content: center;      /* Centra verticalmente */
   align-items: center;          /* Centra horizontalmente */
   color: white;
-
   /* Fondo */
   background-image: url('img/inicio.gif');
   background-size: cover;       /* Cubre todo el contenedor */
@@ -108,9 +107,10 @@ header .logo {
 
 .hero-texto {
   background: rgba(0,0,0,0.5); /* negro semi-transparente */
-  padding: 20px 15px;
+  padding: 20px 10px;
   border-radius: 15px;
   display: inline-block;
+  margin-top: -200px;
 }
 
 .hero h1, .hero p {
