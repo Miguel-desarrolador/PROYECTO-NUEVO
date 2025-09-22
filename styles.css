@@ -24,11 +24,16 @@ header {
   z-index: 1000;
 }
 
-header .logo {
-  font-size: 1.5rem;
+.logo {
+  font-size: 1.2rem; /* tamaño del logo */
   font-weight: bold;
-  color: #fff;
+  color: white; /* color del resto del texto */
 }
+
+.logo .gold {
+  color: rgb(255, 213, 0);
+}
+
 
 .nav-links ul {
   display: flex;
