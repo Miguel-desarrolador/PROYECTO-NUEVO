@@ -80,28 +80,28 @@ header .logo {
 }
 
 
+
 .hero {
   position: relative;
   width: 100%;
-  height: 100vh;
-  overflow: hidden;
+  height: 100vh; /* Ocupa toda la pantalla */
+  overflow: hidden; /* Recorta lo que sobra del video */
   display: flex;
   justify-content: center;
   align-items: center;
-  background: black;
+  background: black; /* Solo se ve si el video tarda en cargar */
   text-align: center;
   color: white;
 }
+
 .hero-video {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 100%;
   height: 100%;
-  max-width: 100%;
-  max-height: 100%;
+  object-fit: cover; /* Llena toda la sección, recorta bordes si es necesario */
   transform: translate(-50%, -50%);
-  object-fit: contain; /* Mantiene todo el video visible */
   pointer-events: none;
   z-index: 0;
 }
@@ -113,27 +113,19 @@ header .logo {
 }
 
 .hero-texto h1 {
-  margin: 0 0 10px;
+  margin: 3px 0 10px;
   font-size: 3rem;
 }
 
 .hero-texto p {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
-/* Colores simples sin efecto neón */
-.rosa {
-  color: #ff00ff; /* rosa */
-}
-
-.azul {
-  color: #00ffff; /* azul */
-}
-
-.amarillo {
-  color: #ffff00; /* amarillo */
-}
+/* Colores simples */
+.rosa { color: #ff00ff; }
+.azul { color: #00ffff; }
+.amarillo { color: #ffff00; }
 
 
 
