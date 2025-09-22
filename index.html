@@ -5,175 +5,141 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TODOROSARIO</title>
   <link rel="stylesheet" href="styles.css">
-  <!-- AOS CSS -->
+  <script src="https://kit.fontawesome.com/a2d9d5a64b.js" crossorigin="anonymous"></script>
+  
+  <!-- AOS -->
 <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
 </head>
 <body>
+
   <!-- HEADER -->
   <header>
-    <div class="logo" data-aos="zoom-in">TODOROSARIO</div>
+    <div class="logo">TODOROSARIO</div>
 
-    <!-- Botón menú hamburguesa -->
     <div class="menu-toggle" id="menu-toggle">
-      <span></span>
-      <span></span>
-      <span></span>
+      <span></span><span></span><span></span>
     </div>
 
-    <!-- Menú -->
     <nav class="nav-links" id="nav-links">
       <ul>
-        <li><a href="#">Inicio</a></li>
+        <li><a href="#inicio">Inicio</a></li>
         <li><a href="#tiendas">Tiendas</a></li>
-        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#unete">Únete</a></li>
       </ul>
     </nav>
   </header>
 
-<section class="hero">
-  <!-- Video de fondo -->
-  <video autoplay muted loop class="hero-video">
-    <source src="img/inicio.mp4" type="video/mp4">
-    Tu navegador no soporta video HTML5.
-  </video>
+  <!-- HERO con video -->
+  <section class="hero" id="inicio">
+    <video autoplay muted loop class="hero-video">
+      <source src="img/inicio.mp4" type="video/mp4">
+    </video>
+    <div class="hero-texto">
+      <h1><span class="rosa">TODO</span><span class="azul">ROSARIO</span></h1>
+      <p>Directorio de tiendas y servicios</p>
+    </div>
+  </section>
 
-  <!-- Texto sobre el video -->
-  <div class="hero-texto">
-  <h1    data-aos="fade-down">
-    <span  class="rosa">TODO</span><span    class="azul">ROSARIO</span>
-  </h1>
-  <p data-aos="flip-left" class="amarillo">Conectamos tiendas y clientes en un solo lugar.</p>
-</div>
+  <!-- SECCIÓN TIENDAS -->
+  <section class="tiendas" id="tiendas">
+    <h2 data-aos="fade-right">Tiendas</h2>
 
-</section>
+    <!-- Buscador -->
+    <div class="buscador">
+      <input type="text" id="buscar-tienda" placeholder="Busca tu tienda...">
+    </div>
+
+    <!-- Grid -->
+    <div class="grid-tiendas" id="grid-tiendas">
+      <!-- Aquí se cargan las tarjetas desde Tiendas.js -->
+    </div>
+
+    <!-- Paginación -->
+    <div id="pagination" class="pagination">
+      <button id="prev-btn">Anterior</button>
+      <div id="page-numbers"></div>
+      <button id="next-btn">Siguiente</button>
+    </div>
+  </section>
 
 
-<section class="tiendas" id="tiendas">
-  <h2>Nuestras Tiendas</h2>
+
+
+  
+  <!-- SECCIÓN SERVICIOS -->
+<section class="servicios" id="servicios">
+  <h2>Servicios</h2>
 
   <!-- Buscador -->
-  <div data-aos="fade-down" class="buscador">
-    <input type="text" id="buscar-tienda" placeholder="Busca tu tienda...">
+  <div class="buscador">
+    <input type="text" id="buscar-servicio" placeholder="Busca tu servicio...">
   </div>
 
-  <div class="grid-tiendas" id="grid-tiendas">
-
-
-    <!-- Cliente 1 -->
-<div  class="card">
-  <img data-aos="flip-left" src="img/gorras.gif" alt="Mayorista sin Límites">
-
-  <h3>Mayorista Sin Límites</h3>
-
-  <!-- Descripción y dirección -->
-  <p><strong>Descripción:</strong> Distribuidora mayorista de gorras, envios todo el país.</p>
-  <p><strong>Dirección:</strong> San Pedro, Provincia de Buenos Aires, Argentina.</p>
-
-  <!-- Horarios -->
-  <p><strong>Horario de atención:</strong></p>
-  <ul>
-    <li>Lunes a Viernes: 8:00 a 22:00</li>
-    <li>Sábado: 13:00 a 20:00</li>
-    <li>Domingo: 18:00 a 21:00</li>
-  </ul>
-
-  <!-- Botones -->
-  <div class="card-buttons">
-    <a href="https://mayorista-sin-limites-frontend.vercel.app/" target="_blank" class="btn">
-      <i class="fa fa-eye"></i> Visitar
-    </a>
-    <a href="https://wa.me/5493329317141?text=👋%20Holaa!%20He%20visto%20tu%20tienda%20en%20TODO%20ROSARIO%20y%20me%20gustaría%20comprar%20tus%20productos%20🛒" 
-       target="_blank" class="btn-whatsapp">
-      <i class="fab fa-whatsapp"></i> Contactar por WhatsApp
-    </a>
+  <!-- Grid -->
+  <div class="grid-servicios" id="grid-servicios">
+    <!-- Aquí se cargan las tarjetas desde Servicios.js -->
   </div>
-</div>
 
-
-
-<!-- Cliente 2 -->
-<div  class="card">
-  <img data-aos="flip-right" src="img/tecnologia.jpg" alt="D y M Technology">
-
-  <h3>D y M Technology</h3>
-
-  <!-- Descripción y dirección -->
-  <p><strong>Descripción:</strong> Tienda de todo tipo de productos tecnológicos: celulares, auriculares, tablets y más.</p>
-  <p><strong>Dirección:</strong>  Rosario, Argentina</p>
-
-  <!-- Horarios 24/7 -->
-  <p><strong>Horario de atención:</strong> 24/7</p>
-
-  <!-- Botones -->
-  <div class="card-buttons">
-    <a href="https://shopventa.vercel.app/" target="_blank" class="btn">
-      <i class="fa fa-eye"></i> Visitar
-    </a>
-    <a href="https://wa.me/3416996971?text=👋%20Holaa!%20He%20visto%20tu%20tienda%20D%20y%20M%20Technology%20en%20TODO%20ROSARIO%20y%20me%20gustaría%20comprar%20tus%20productos%20🛒" 
-       target="_blank" class="btn-whatsapp">
-      <i class="fab fa-whatsapp"></i> Contactar por WhatsApp
-    </a>
-  </div>
-</div>
-
+  <!-- Paginación -->
+  <div id="pagination-servicios" class="pagination">
+    <button id="prev-btn-servicios">Anterior</button>
+    <div id="page-numbers-servicios"></div>
+    <button id="next-btn-servicios">Siguiente</button>
   </div>
 </section>
 
+<br>
 
-<!-- Sección Únete -->
-<section class="unete" id="unete">
-  <div class="container">
-    <h2 data-aos="fade-up">¡Únete a TODOROSARIO!</h2>
-    <p data-aos="fade-up">Subí tu página web y conecta con miles de clientes en todo Rosario.</p>
-    
-    <button class="btn-unete" id="open-modal">Quiero vender / Ser parte</button>
+  <!-- SECCIÓN ÚNETE -->
+  <section class="unete" id="unete">
+    <h2>¿Quieres unirte?</h2>
+    <p>Agrega tu tienda o servicio en nuestro directorio</p>
+    <button id="open-modal" class="btn-unete"><i class="fas fa-plus"></i> Únete ahora</button>
+  </section>
+
+
+  
+  <!-- Modal -->
+  <div id="modal-unete" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" id="close-modal">&times;</span>
+      <h3>Únete a TODOROSARIO</h3>
+      <p>Completa tus datos y te contactaremos</p>
+      <form id="form-unete">
+        <label>Nombre</label>
+        <input type="text" id="nombre" required>
+        <label>Rubro</label>
+        <input type="text" id="rubro" required>
+        <label>Edad</label>
+        <input type="number" id="edad" required>
+        <label>Descripción</label>
+        <textarea id="descripcion" rows="4" required></textarea>
+        <a href="#" id="enviar-whatsapp" class="btn-whatsapp"><i class="fab fa-whatsapp"></i> Enviar por WhatsApp</a>
+      </form>
+    </div>
   </div>
-</section>
 
-<!-- Modal Mejorado -->
-<div id="modal-unete" class="modal">
-  <div class="modal-content" data-aos="zoom-in">
-    <span class="close-modal" id="close-modal">&times;</span>
-    <h3>Únete a TODOROSARIO</h3>
-    <p>Completa tus datos y envíalos por WhatsApp:</p>
-
-    <form id="form-unete">
-      <label for="nombre">Nombre:</label>
-      <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
-
-      <label for="rubro">Rubro:</label>
-      <input type="text" id="rubro" name="rubro" placeholder="Ej: Tienda de Gorras" required>
-
-      <label for="edad">Edad:</label>
-      <input type="number" id="edad" name="edad" placeholder="Tu edad" required>
-
-      <label for="descripcion">Descripción:</label>
-      <textarea id="descripcion" name="descripcion" rows="3" placeholder="Descripción de tu negocio" required></textarea>
-
-      <a id="enviar-whatsapp" href="#" target="_blank" class="btn-whatsapp">
-        <i class="fab fa-whatsapp"></i> Enviar por WhatsApp
-      </a>
-    </form>
-  </div>
-</div>
 
   <!-- FOOTER -->
-<footer id="contacto" class="footer">
-  <p>&copy; 2025 TODOROSARIO | Todos los derechos reservados</p>
-</footer>
+  <footer class="footer">
+    <p>© 2025 TODOROSARIO - Todos los derechos reservados</p>
+  </footer>
 
 
-
-  <!-- AOS JS -->
+  <!-- Antes de cerrar </body> -->
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script>
   AOS.init({
     duration: 1000, // Duración de la animación en ms
-    once: true,     // Animar solo una vez al hacer scroll
+    once: true // Que la animación se ejecute solo una vez
   });
 </script>
 
+  <!-- Scripts -->
+  <script src="Tiendas.js"></script>
   <script src="script.js"></script>
+  <script src="Servicios.js"></script>
+  <script src="servicios-logica.js"></script>
 </body>
 </html>
