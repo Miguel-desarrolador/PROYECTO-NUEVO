@@ -14,3 +14,22 @@ document.querySelectorAll(".nav-links a").forEach(link => {
     menuToggle.classList.remove("open");
   });
 });
+
+
+// Buscador de tiendas
+const buscarInput = document.getElementById("buscar-tienda");
+const gridTiendas = document.getElementById("grid-tiendas");
+const cards = gridTiendas.getElementsByClassName("card");
+
+buscarInput.addEventListener("input", function() {
+  const filtro = this.value.toLowerCase();
+
+  for (let i = 0; i < cards.length; i++) {
+    const titulo = cards[i].getElementsByTagName("h3")[0].textContent.toLowerCase();
+    if (titulo.includes(filtro)) {
+      cards[i].style.display = "";
+    } else {
+      cards[i].style.display = "none";
+    }
+  }
+});
