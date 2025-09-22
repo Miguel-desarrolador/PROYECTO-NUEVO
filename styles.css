@@ -95,7 +95,7 @@ header .logo {
 
 .hero-video {
   max-width: 100%;
-  max-height: 100%;
+  max-height: auto;
   width: auto;
   height: auto;
   object-fit: contain;
@@ -106,7 +106,6 @@ header .logo {
   transform: translate(-50%, -50%);
   z-index: 0;
 }
-
 .hero-texto {
   position: relative;
   z-index: 1;
@@ -123,21 +122,19 @@ header .logo {
   font-size: 1.5rem;
 }
 
-/* Neón menos brillante */
-.neon-rosa {
-  color: #ff00ff;
-  text-shadow: 0 0 3px #ff00ff, 0 0 6px #ff00ff;
+/* Colores simples sin efecto neón */
+.rosa {
+  color: #ff00ff; /* rosa */
 }
 
-.neon-azul {
-  color: #00ffff;
-  text-shadow: 0 0 3px #00ffff, 0 0 6px #00ffff;
+.azul {
+  color: #00ffff; /* azul */
 }
 
-.neon-amarillo {
-  color: #ffff00;
-  text-shadow: 0 0 3px #ffff00, 0 0 6px #ffff00;
+.amarillo {
+  color: #ffff00; /* amarillo */
 }
+
 
 
 
