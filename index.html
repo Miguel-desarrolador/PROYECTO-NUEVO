@@ -40,10 +40,10 @@
 
   <!-- Texto sobre el video -->
   <div class="hero-texto">
-  <h1>
-    <span data-aos="zoom-in" class="rosa">TODO</span><span   data-aos="fade-left" class="azul">ROSARIO</span>
+  <h1    data-aos="fade-down">
+    <span  class="rosa">TODO</span><span    class="azul">ROSARIO</span>
   </h1>
-  <p data-aos="zoom-in" class="amarillo">Conectamos tiendas y clientes en un solo lugar.</p>
+  <p data-aos="flip-left" class="amarillo">Conectamos tiendas y clientes en un solo lugar.</p>
 </div>
 
 </section>
@@ -53,23 +53,46 @@
   <h2>Nuestras Tiendas</h2>
 
   <!-- Buscador -->
-  <div class="buscador">
+  <div data-aos="fade-down" class="buscador">
     <input type="text" id="buscar-tienda" placeholder="Busca tu tienda...">
   </div>
 
   <div class="grid-tiendas" id="grid-tiendas">
 
+
     <!-- Cliente 1 -->
-    <div class="card">
-      <img src="img/gorras.gif" alt="Mayorista sin Límites">
-      <h3>Mayorista Sin Límites</h3>
-      <a href="https://mayorista-sin-limites-frontend.vercel.app/" target="_blank" class="btn">
-        Visitar
-      </a>
-    </div>
+<div data-aos="flip-left" class="card">
+  <img src="img/gorras.gif" alt="Mayorista sin Límites">
+
+  <h3>Mayorista Sin Límites</h3>
+
+  <!-- Descripción y dirección -->
+  <p><strong>Descripción:</strong> Distribuidora mayorista de gorras a todo el país.</p>
+  <p><strong>Dirección:</strong> San Pedro, Provincia de Buenos Aires, Argentina</p>
+
+  <!-- Horarios -->
+  <p><strong>Horario de atención:</strong></p>
+  <ul>
+    <li>Lunes a Viernes: 8:00 a 22:00</li>
+    <li>Sábado: 13:00 a 20:00</li>
+    <li>Domingo: 18:00 a 21:00</li>
+  </ul>
+
+  <!-- Botones -->
+  <div class="card-buttons">
+    <a href="https://mayorista-sin-limites-frontend.vercel.app/" target="_blank" class="btn">
+      <i class="fa fa-eye"></i> Visitar
+    </a>
+    <a href="https://wa.me/5493329317141?text=👋%20Holaa!%20He%20visto%20tu%20tienda%20en%20TODO%20ROSARIO%20y%20me%20gustaría%20comprar%20tus%20productos%20🛒" 
+       target="_blank" class="btn-whatsapp">
+      <i class="fab fa-whatsapp"></i> Contactar por WhatsApp
+    </a>
+  </div>
+</div>
+
 
     <!-- Cliente 2 -->
-    <div class="card">
+    <div data-aos="flip-right" class="card">
       <img src="img/tecnologia.jpg" alt="Tienda de Tecnología">
       <h3>Tienda de Tecnología</h3>
       <a href="https://shopventa.vercel.app/" target="_blank" class="btn">
