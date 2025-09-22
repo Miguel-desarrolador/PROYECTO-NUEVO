@@ -79,22 +79,46 @@ header .logo {
   transform: rotate(-45deg) translate(6px, -6px);
 }
 
-/* HERO */
+/* HERO con fondo GIF y altura completa */
 .hero {
   text-align: center;
-  padding: 80px 20px;
-  background: linear-gradient(135deg, #1abc9c, #16a085);
+  height: 100vh;               /* Ocupa toda la pantalla */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;      /* Centra verticalmente */
+  align-items: center;          /* Centra horizontalmente */
   color: white;
+
+  /* Fondo */
+  background-image: url('img/inicio.gif');
+  background-size: cover;       /* Cubre todo el contenedor */
+  background-position: center;  /* Centrado */
+  background-repeat: no-repeat;
+  position: relative;
 }
 
-.hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 15px;
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.1); /* 60% de oscuridad */
+  z-index: 0;
 }
 
-.hero p {
-  font-size: 1.2rem;
+.hero-texto {
+  background: rgba(0,0,0,0.5); /* negro semi-transparente */
+  padding: 20px 15px;
+  border-radius: 15px;
+  display: inline-block;
 }
+
+.hero h1, .hero p {
+  margin: 0;
+}
+
+
+
 
 /* SECCIÓN TIENDAS */
 .tiendas {
@@ -127,7 +151,7 @@ header .logo {
 
 .card img {
   width: 100%;
-  height: 200px;
+  height: auto;
   object-fit: cover;
 }
 
