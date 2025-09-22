@@ -62,7 +62,7 @@ enviarBtn.addEventListener('click', () => {
 
   if(nombre && rubro && edad && descripcion){
     const mensaje = `👋 Holaa! Quiero unirme a TODOROSARIO y estos son mis datos:%0ANombre: ${nombre}%0ARubro: ${rubro}%0AEdad: ${edad}%0ADescripción: ${descripcion}`;
-    enviarBtn.href = `https://wa.me/54934130047240?text=${mensaje}`;
+    enviarBtn.href = `https://wa.me/5493413047240?text=${mensaje}`;
   } else {
     alert('Por favor completa todos los campos antes de enviar.');
   }
