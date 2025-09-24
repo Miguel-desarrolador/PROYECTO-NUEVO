@@ -240,11 +240,18 @@ header {
 .card-buttons {
   margin-top: 18px;
   display: flex;
-  flex-direction: row; /* ahora en fila */
-  gap: 12px;           /* espacio entre botones */
+  flex-direction: row;   /* fila */
+  gap: 12px;             /* espacio entre botones */
   justify-content: center; /* centrados horizontalmente */
-  flex-wrap: wrap;     /* que se acomoden si la pantalla es pequeña */
+  flex-wrap: nowrap;     /* no se acomodan en otra línea */
 }
+
+.card-buttons .btn,
+.card-buttons .btn-whatsapp {
+  width: auto;           /* tamaño según contenido */
+  white-space: nowrap;   /* evita que el texto se rompa */
+}
+
 
 .card-buttons .btn-whatsapp {
   background: #25D366;
@@ -266,9 +273,6 @@ header {
   box-shadow: 0 6px 15px rgba(0,0,0,0.15);
 }
 
-.card-buttons .btn{
-  font-size: 0.88rem;
-}
 
 .card-buttons .btn:hover {
   transform: translateY(-2px);
@@ -276,6 +280,12 @@ header {
   box-shadow: 0 6px 15px rgba(0,0,0,0.15);
 }
 
+@media (max-width: 480px) {
+  .card-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
 
 .btn, .btn-whatsapp {
   padding: 12px 20px;
