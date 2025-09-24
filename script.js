@@ -55,37 +55,42 @@ const nextBtn = document.getElementById("next-btn");
 const itemsPerPage = 8;
 let currentPage = 1;
 let filteredProductos = productos;
-
 function renderPage(page) {
   gridTiendas.innerHTML = "";
+
   const start = (page - 1) * itemsPerPage;
   const end = start + itemsPerPage;
   const paginatedItems = filteredProductos.slice(start, end);
 
   paginatedItems.forEach(prod => {
-  const card = document.createElement("div");
-  card.classList.add("card");
+    const card = document.createElement("div");
+    card.classList.add("card");
+    card.setAttribute("data-aos", "flip-left"); // animación AOS
+// HTML de la card
+card.innerHTML = `
+  <img src="${prod.img}" alt="${prod.nombre}">
+  <h3>${prod.nombre}</h3>
+  <p><strong>Descripción:</strong> ${prod.descripcion}</p>
+  <p><strong>Dirección:</strong> ${prod.direccion}</p>
+  <p><strong>Horario de atención:</strong></p>
+  <ul>${prod.horario.map(h => `<li>${h}</li>`).join("")}</ul>
+  <div class="card-buttons">
+    <a href="${prod.url}" target="_blank" class="btn">
+      <i class="fa fa-eye"></i> Visitar sitio web
+    </a>
+  <a href="${prod.whatsapp}" target="_blank" class="btn-whatsapp">
+ <i class="fab fa-whatsapp"></i>
+ Contactar
+</a>
+  </div>
+`;
 
-  // <-- Agregás esta línea
-  card.setAttribute("data-aos", "flip-left");
 
-  card.innerHTML = `
-    <img src="${prod.img}" alt="${prod.nombre}">
-    <h3>${prod.nombre}</h3>
-    <p><strong>Descripción:</strong> ${prod.descripcion}</p>
-    <p><strong>Dirección:</strong> ${prod.direccion}</p>
-    <p><strong>Horario de atención:</strong></p>
-    <ul>${prod.horario.map(h => `<li>${h}</li>`).join("")}</ul>
-    <div class="card-buttons">
-      <a href="${prod.url}" target="_blank" class="btn"><i class="fa fa-eye"></i> Visitar</a>
-      <a href="${prod.whatsapp}" target="_blank" class="btn-whatsapp"><i class="fab fa-whatsapp"></i> Contactar</a>
-    </div>
-  `;
-
-  gridTiendas.appendChild(card);
-});
+    gridTiendas.appendChild(card);
+  });
 
   renderPagination(page);
+  AOS.refresh(); // refresca animaciones AOS
 }
 
 function renderPagination(page) {

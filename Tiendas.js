@@ -18,7 +18,7 @@ const productos = [
     direccion: "Rosario, Argentina",
     horario: ["24/7"],
     img: "img/tecnologia.jpg",
-    url: "https://shopventa.vercel.app/",
+    url: "https://dym-technology.vercel.app/",
     whatsapp: "https://wa.me/3416996971?text=👋%20Holaa!%20He%20visto%20tu%20tienda%20D%20y%20M%20Technology%20en%20TODO%20ROSARIO%20y%20me%20gustaría%20comprar%20tus%20productos%20🛒"
   },
   {
