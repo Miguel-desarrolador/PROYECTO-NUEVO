@@ -266,10 +266,13 @@ header {
   box-shadow: 0 6px 15px rgba(0,0,0,0.15);
 }
 
+.card-buttons .btn{
+  font-size: 0.88rem;
+}
 
 .card-buttons .btn:hover {
   transform: translateY(-2px);
-  background:  #d77e1e;
+  background:  #6d3c06;
   box-shadow: 0 6px 15px rgba(0,0,0,0.15);
 }
 
