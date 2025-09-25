@@ -22,17 +22,18 @@ const productos = [
   whatsapp: "https://wa.me/5493416996971?text=👋%20Holaa!%20He%20visto%20tu%20tienda%20D%20y%20M%20Technology%20en%20TODO%20ROSARIO%20y%20me%20gustaría%20comprar%20tus%20productos%20🛒"
 }
 ,
-  {
-    nombre: "Mayorista Comestibles",
-    descripcion: "Distribuidora mayorista de productos comestibles: azúcar, yerba, fideos y más.",
-    direccion: "Uruguaty 4000, Rosario, Argentina",
-    horario: [
-      "Lunes a Viernes: 8:00 a 18:00",
-      "Sábado: 8:00 a 12:00"
-    ],
-    img: "img/alimentos.jpg",
-    url: "#",
-    whatsapp: "https://wa.me/5493412345678"
-  },
+ {
+  nombre: "Distribuidora Fari",
+  descripcion: "Distribuidora mayorista de productos comestibles: azúcar, yerba, fideos y más.",
+  direccion: "Uruguaty 4000, Rosario, Argentina",
+  horario: [
+    "Lunes a Viernes: 8:00 a 18:00",
+    "Sábado: 8:00 a 12:00"
+  ],
+  img: "img/alimentos.jpg",
+  url: "https://distribuidor-fari.vercel.app/",
+  whatsapp: "https://wa.me/5493412345678"
+}
+
   
 ];
