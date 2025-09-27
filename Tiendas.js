@@ -33,6 +33,18 @@ const productos = [
   img: "img/alimentos.jpg",
   url: "https://distribuidor-fari.vercel.app/",
   whatsapp: "https://wa.me/5493412345678"
+},
+{
+  "nombre": "Tienda de Ropa Adonay",
+  "descripcion": "Tienda de ropa moderna y elegante para todas las edades.",
+  "direccion": "Uruguaty 4000, Rosario, Argentina",
+  "horario": [
+    "Lunes a Viernes: 9:00 a 20:00",
+    "Sábado: 9:00 a 13:00"
+  ],
+  "img": "img/ropa.jpg",
+  "url": "https://tiendaderopa-two.vercel.app/",
+  "whatsapp": "https://wa.me/5493412345678"
 }
 
   
