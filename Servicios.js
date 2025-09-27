@@ -1,13 +1,17 @@
 const servicios = [
-  {
-    nombre: "Peluquería",
-    descripcion: "Cortes, peinados y coloración profesional",
-    direccion: "Av. Siempre Viva 123",
-    horario: ["Lunes a Viernes: 9:00 a 19:00", "Sábado: 9:00 a 14:00"],
-    img: "img/peluqueria.jfif",
-    url: "#",
-    whatsapp: "https://wa.me/5493412345678"
-  },
+ {
+  "nombre": "Barbería",
+  "descripcion": "Cortes, afeitados y perfilados profesionales",
+  "direccion": "Av. Siempre Viva 123",
+  "horario": [
+    "Lunes a Viernes: 9:00 a 19:00",
+    "Sábado: 9:00 a 14:00"
+  ],
+  "img": "img/barberia.jpg",
+  "url": "#",
+  "whatsapp": "https://wa.me/5493412345678"
+}
+,
   {
     nombre: "Uñas y Pestañas",
     descripcion: "Manicura, pedicura y extensión de pestañas",
