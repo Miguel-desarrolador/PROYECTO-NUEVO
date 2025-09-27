@@ -8,7 +8,7 @@ const servicios = [
     "Sábado: 9:00 a 14:00"
   ],
   "img": "img/barberia.jpg",
-  "url": "#",
+  "url": "https://barberia-alexis-ottazo-turnos.vercel.app/",
   "whatsapp": "https://wa.me/5493412345678"
 }
 ,
